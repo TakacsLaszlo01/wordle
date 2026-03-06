@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "S:\\TakacsLaszloIstvan\\Wordle\\Wordle\\Wordle.csproj": {}
+    "C:\\Users\\tanar-taklas\\Desktop\\Wordle\\Wordle\\Wordle.csproj": {}
   },
   "projects": {
-    "S:\\TakacsLaszloIstvan\\Wordle\\WordleLib\\WordleLib.csproj": {
+    "C:\\Users\\tanar-taklas\\Desktop\\Wordle\\WordleLib\\WordleLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "S:\\TakacsLaszloIstvan\\Wordle\\WordleLib\\WordleLib.csproj",
+        "projectUniqueName": "C:\\Users\\tanar-taklas\\Desktop\\Wordle\\WordleLib\\WordleLib.csproj",
         "projectName": "WordleLib",
-        "projectPath": "S:\\TakacsLaszloIstvan\\Wordle\\WordleLib\\WordleLib.csproj",
+        "projectPath": "C:\\Users\\tanar-taklas\\Desktop\\Wordle\\WordleLib\\WordleLib.csproj",
         "packagesPath": "C:\\Users\\tanar-taklas\\.nuget\\packages\\",
-        "outputPath": "S:\\TakacsLaszloIstvan\\Wordle\\WordleLib\\obj\\",
+        "outputPath": "C:\\Users\\tanar-taklas\\Desktop\\Wordle\\WordleLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -65,18 +65,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "S:\\TakacsLaszloIstvan\\Wordle\\Wordle\\Wordle.csproj": {
+    "C:\\Users\\tanar-taklas\\Desktop\\Wordle\\Wordle\\Wordle.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "S:\\TakacsLaszloIstvan\\Wordle\\Wordle\\Wordle.csproj",
+        "projectUniqueName": "C:\\Users\\tanar-taklas\\Desktop\\Wordle\\Wordle\\Wordle.csproj",
         "projectName": "Wordle",
-        "projectPath": "S:\\TakacsLaszloIstvan\\Wordle\\Wordle\\Wordle.csproj",
+        "projectPath": "C:\\Users\\tanar-taklas\\Desktop\\Wordle\\Wordle\\Wordle.csproj",
         "packagesPath": "C:\\Users\\tanar-taklas\\.nuget\\packages\\",
-        "outputPath": "S:\\TakacsLaszloIstvan\\Wordle\\Wordle\\obj\\",
+        "outputPath": "C:\\Users\\tanar-taklas\\Desktop\\Wordle\\Wordle\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,8 +97,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "S:\\TakacsLaszloIstvan\\Wordle\\WordleLib\\WordleLib.csproj": {
-                "projectPath": "S:\\TakacsLaszloIstvan\\Wordle\\WordleLib\\WordleLib.csproj"
+              "C:\\Users\\tanar-taklas\\Desktop\\Wordle\\WordleLib\\WordleLib.csproj": {
+                "projectPath": "C:\\Users\\tanar-taklas\\Desktop\\Wordle\\WordleLib\\WordleLib.csproj"
               }
             }
           }
@@ -113,7 +113,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -137,7 +137,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
