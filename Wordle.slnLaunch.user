@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "WordleApp",
+    "Projects": [
+      {
+        "Path": "Wordle\\Wordle.csproj",
+        "Action": "Start"
+      }
+    ]
+  },
+  {
+    "Name": "WordleCon",
+    "Projects": [
+      {
+        "Path": "WordleConsole\\WordleConsole.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

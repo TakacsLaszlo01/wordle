@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36429.23 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wordle", "Wordle\Wordle.csproj", "{9F0788D8-DEA8-42A1-8539-70A3062EC542}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordleLib", "WordleLib\WordleLib.csproj", "{04583225-7AC6-4C07-AB78-AFACBE6C1656}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordleConsole", "WordleConsole\WordleConsole.csproj", "{2A62B0A1-D6F6-41E0-88C2-DDA78EA9880F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordleTesting", "WordleTesting\WordleTesting.csproj", "{935BC87E-8FD6-4760-A00B-8FAE0A0A7C48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F0788D8-DEA8-42A1-8539-70A3062EC542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F0788D8-DEA8-42A1-8539-70A3062EC542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F0788D8-DEA8-42A1-8539-70A3062EC542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F0788D8-DEA8-42A1-8539-70A3062EC542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04583225-7AC6-4C07-AB78-AFACBE6C1656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04583225-7AC6-4C07-AB78-AFACBE6C1656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04583225-7AC6-4C07-AB78-AFACBE6C1656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04583225-7AC6-4C07-AB78-AFACBE6C1656}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A62B0A1-D6F6-41E0-88C2-DDA78EA9880F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A62B0A1-D6F6-41E0-88C2-DDA78EA9880F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A62B0A1-D6F6-41E0-88C2-DDA78EA9880F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A62B0A1-D6F6-41E0-88C2-DDA78EA9880F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{935BC87E-8FD6-4760-A00B-8FAE0A0A7C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{935BC87E-8FD6-4760-A00B-8FAE0A0A7C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{935BC87E-8FD6-4760-A00B-8FAE0A0A7C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{935BC87E-8FD6-4760-A00B-8FAE0A0A7C48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FC5F5EF-5216-4859-BFB6-20C01E98ECFF}
+	EndGlobalSection
+EndGlobal
