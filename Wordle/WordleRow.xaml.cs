@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using WordleLib;
 namespace Wordle;
 
 /// <summary>
@@ -23,5 +23,25 @@ public partial class WordleRow : Grid
     public WordleRow()
     {
         InitializeComponent();
+    }
+    public string InputWord
+    {
+        get
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (UIElement element in this.Children)
+            {
+                if (element is LetterBox lb)
+                    sb.Append(lb.Text);
+            }
+            string result = sb.ToString();
+            if (result.All(Char.IsLetter))
+                throw new ArgumentException();
+            return result.ToLower();
+        }
+    }
+    public void ColorWord(Status statuses)
+    {
+
     }
 }
