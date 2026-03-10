@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +20,12 @@ namespace Wordle;
 /// </summary>
 public partial class WordleRow : Grid
 {
+    private Dictionary<Status, Color> bgColors = new Dictionary<Status, Color>()
+    {
+        {Status.Wrong, Color.FromRgb(255, 64, 64)},
+        {Status.Contains, Color.FromRgb(240, 240, 64)},
+        {Status.Matches, Color.FromRgb(32, 255, 96)}
+    };
     public WordleRow()
     {
         InitializeComponent();
@@ -34,14 +40,21 @@ public partial class WordleRow : Grid
                 if (element is LetterBox lb)
                     sb.Append(lb.Text);
             }
-            string result = sb.ToString();
+            string result = sb.ToString(); 
             if (result.All(Char.IsLetter))
                 throw new ArgumentException();
             return result.ToLower();
         }
     }
-    public void ColorWord(Status statuses)
+    public void ColorWord(Status[] statuses)
     {
-
+        int n = statuses.Length;
+        for (int i = 0; i < n; i++)
+        {
+            if (FindName($"Letter_{i}") is LetterBox lb)
+            {
+                lb.Background = new SolidColorBrush(bgColors[statuses[i]]);
+            }
+        }
     }
 }
