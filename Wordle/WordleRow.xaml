@@ -5,11 +5,11 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Wordle"
              mc:Ignorable="d" 
-             Height="54" Width="195" Background="White">
+             Height="40" Width="195" Background="White">
     <Grid.RowDefinitions>
-        <RowDefinition Height="13" />
+        <RowDefinition Height="7" />
         <RowDefinition Height="27" />
-        <RowDefinition Height="13" />
+        <RowDefinition Height="6" />
     </Grid.RowDefinitions>
     <Grid.ColumnDefinitions>
         <ColumnDefinition Width="10" />

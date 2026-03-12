@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wordle"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="400" Width="600"
+        MinHeight="200" MinWidth="300">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="195"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="245" />
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <DockPanel Background="Transparent" Grid.Row="1" Grid.Column="1">
+            <local:WordleRow DockPanel.Dock="Top" />
+            <local:WordleRow DockPanel.Dock="Top" />
+            <local:WordleRow DockPanel.Dock="Top" />
+            <local:WordleRow DockPanel.Dock="Top" />
+            <local:WordleRow DockPanel.Dock="Top" />
+            <local:WordleRow DockPanel.Dock="Top" />
+            <Line/>
+        </DockPanel>
     </Grid>
 </Window>

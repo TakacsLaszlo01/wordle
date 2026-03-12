@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -54,6 +54,7 @@ public partial class WordleRow : Grid
             if (FindName($"Letter_{i}") is LetterBox lb)
             {
                 lb.Background = new SolidColorBrush(bgColors[statuses[i]]);
+                lb.IsReadOnly = true;
             }
         }
     }
