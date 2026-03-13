@@ -26,9 +26,11 @@ public partial class WordleRow : Grid
         {Status.Contains, Color.FromRgb(240, 240, 64)},
         {Status.Matches, Color.FromRgb(32, 255, 96)}
     };
-    public WordleRow()
+    public WordleRow() : this(true) { }
+    public WordleRow(bool isReadOnly)
     {
         InitializeComponent();
+        SetReadOnly(isReadOnly);
     }
     public string InputWord
     {
@@ -41,8 +43,8 @@ public partial class WordleRow : Grid
                     sb.Append(lb.Text);
             }
             string result = sb.ToString(); 
-            if (result.All(Char.IsLetter))
-                throw new ArgumentException();
+            if (!result.All(Char.IsLetter))
+                throw new ArgumentException(result);
             return result.ToLower();
         }
     }
@@ -57,5 +59,10 @@ public partial class WordleRow : Grid
                 lb.IsReadOnly = true;
             }
         }
+    }
+    public void SetReadOnly(bool value)
+    {
+        foreach(LetterBox lb in Children)
+            lb.IsReadOnly = value;
     }
 }

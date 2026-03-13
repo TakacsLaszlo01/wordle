@@ -11,6 +11,7 @@
          HorizontalContentAlignment="Center"
          VerticalContentAlignment="Center"
          MaxLength="1" FontSize="18"
+         IsReadOnly="True"
 />
     
 

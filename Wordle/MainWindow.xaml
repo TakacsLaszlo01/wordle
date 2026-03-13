@@ -20,14 +20,15 @@
             <RowDefinition Height="245" />
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
-        <DockPanel Background="Transparent" Grid.Row="1" Grid.Column="1">
-            <local:WordleRow DockPanel.Dock="Top" />
-            <local:WordleRow DockPanel.Dock="Top" />
-            <local:WordleRow DockPanel.Dock="Top" />
-            <local:WordleRow DockPanel.Dock="Top" />
-            <local:WordleRow DockPanel.Dock="Top" />
-            <local:WordleRow DockPanel.Dock="Top" />
+        <DockPanel x:Name="WordlePanel" Grid.Row="1" Grid.Column="1">
+            <local:WordleRow x:Name="GuessRow_0" DockPanel.Dock="Top"  />
+            <local:WordleRow x:Name="GuessRow_1" DockPanel.Dock="Top"  />
+            <local:WordleRow x:Name="GuessRow_2" DockPanel.Dock="Top"  />
+            <local:WordleRow x:Name="GuessRow_3" DockPanel.Dock="Top"  />
+            <local:WordleRow x:Name="GuessRow_4" DockPanel.Dock="Top"  />
+            <local:WordleRow x:Name="GuessRow_5" DockPanel.Dock="Top"  />
             <Line/>
         </DockPanel>
+        <Button Click="Button_Click"  Grid.Row="1" Grid.Column="3">Küldés</Button>
     </Grid>
 </Window>
