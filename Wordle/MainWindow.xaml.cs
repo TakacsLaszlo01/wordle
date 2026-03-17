@@ -1,4 +1,4 @@
-﻿using System.Text;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -32,10 +32,22 @@ public partial class MainWindow : Window
         WordleRow guessRow = GetGuessRow(guessCounter);
         if (guessRow != null)
         {
-            Status[] statuses = wordle.MakeGuess(guessRow.InputWord);
-            guessRow.ColorWord(statuses);
-            guessCounter = guessCap - wordle.Guesses;
-            GetGuessRow(guessCounter).SetReadOnly(false); 
+            try
+            {
+                Status[] statuses = wordle.MakeGuess(guessRow.InputWord);
+                guessRow.ColorWord(statuses);
+                guessCounter = guessCap - wordle.Guesses;
+                GetGuessRow(guessCounter).SetReadOnly(false);
+
+            }
+            catch (OutOfGuessesException ex)
+            {
+                MessageBox.Show(ex.Message, "Hiba!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Hiba!");
+            }
             //try-catch hiányzik még
         }
     }
