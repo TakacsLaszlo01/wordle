@@ -1,4 +1,4 @@
-﻿namespace WordleLib;
+namespace WordleLib;
 
 public class Wordle
 {
@@ -43,7 +43,7 @@ public class Wordle
                 NonexistentWordException("Listában nem található szó!");
         }
         if (--guesses <= 0)
-            throw new OutOfGuessesException();
+            throw new OutOfGuessesException($"Sajnos nem sikerült kitalálni a szót! A megoldás: {correctWord}");
 
         Status[] statuses = new Status[wordLength];
         bool[] isMarked = new bool[wordLength];
